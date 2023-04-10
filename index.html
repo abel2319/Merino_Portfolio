@@ -11,8 +11,8 @@
 <body>
     <!-- Header -->
     <div class="header">
-        <div class="brand">
-            <a href="index.html"><span class="me">Me</span><span class="ri">ri</span><span class="no">no</span></a> 
+        <div class="brand" >
+            <a class="brand-link" href="index.html"><span class="me first-me">Me</span><span class="ri first-ri">ri</span><span class="no first-no">no</span></a> 
         </div>
         <div class="items">
             <div class="home"><a href="index.html">Home</a></div>
@@ -29,10 +29,10 @@
             BUILDING NOW <br>
             THE AFRICA <br>
             OF TOMORROW <br>
-            THROUGH <span>TRAINING !</span> 
+            THROUGH <span id="dynamic-text">TRAINING !</span> 
         </div>
         <div class="right-image">
-            <img src="images/hero-image.png" alt="hero-section-image">
+            <img id="dynamic-image" src="images/pic_training.png" alt="hero-section-image">
         </div>
     </div>
     <!-- Services Items -->
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="description">
-                <span>Merino For.U</span> is a set services for <br> your company's use cases and need. <br> We build meaningful and realistic <br> software <span>just for.U</span> 
+                <span>Merino For.U</span> is a set of services for <br> your company's use cases and needs. <br> We build meaningful and realistic <br> software <span>just for.U</span> 
             </div>
         </div>
         <!-- ai & electronic -->
@@ -95,8 +95,8 @@
                 Not sure where to start from ? Go for <span class="help">Help</span> .
             </div>
             <div class="start-buttons">
-                <div class="go button">
-                    <a class="except" href="inscription.html">Let's GO</a> 
+                <div id="go" class="go button">
+                    <a  class="except">Let's GO</a> 
                 </div>
                 <div class="help">
                     <a href="helpme.html">Help me</a> 
@@ -123,8 +123,8 @@
     </div>
     <!-- Footer -->
     <div class="footer">
-        <div class="left-brand">
-            <a href="index.html"><span class="me">Me</span><span class="ri">ri</span><span class="no">no</span></a> 
+        <div class="left-brand brand">
+            <a class="brand-link" href="index.html"><span class="me first-me">Me</span><span class="ri first-ri">ri</span><span class="no first-no">no</span></a> 
         </div>
         <div class="middle-items">
             <div class="home"><a href="index.html">Home</a></div>
@@ -146,7 +146,92 @@
             </div>
         </div>
     </div>
+    
+    <div id="go-form">
+        <!-- <div class="progress-bar">
+            
+            <div class="first-step">
+                Step 1
+            </div>
+            <div class="second-step">
+                Step 2
+            </div>
+            <div class="third-step">
+                Step 3
+            </div>
+            <div class="bar"></div>
+        </div> -->
 
+        <div class="first-step-container form-container">
+            <div class="title">
+                Your Identity
+            </div>
+            <div class="form-input">
+                <p>Firstname :</p>
+                <input type="text">
+            </div>
+            <div class="form-input">
+                <p>Name :</p>
+                <input type="text">
+            </div>
+            <div class="form-input">
+                <p>Email :</p>
+                <input type="email">
+            </div>
+            <div class="next" id="first-next">
+                Next
+            </div>
+        </div>
+
+        <div class="second-step-container form-container">
+            <div class="title">
+                Your Options
+            </div>
+            <div class="form-input">
+                <p>First Priority</p>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">Training</option>
+                    <option value="">Merino For.U</option>
+                    <option value="">AI & Electronic</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <p>Second Priority</p>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">Training</option>
+                    <option value="">Merino For.U</option>
+                    <option value="">AI & Electronic</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <p>Third Priority</p>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">Training</option>
+                    <option value="">Merino For.U</option>
+                    <option value="">AI & Electronic</option>
+                </select>
+            </div>
+            <div class="next" id="second-next">
+                Next
+            </div>
+        </div>
+
+        <div class="third-step-container form-container">
+            <div class="form-status">
+                <img src="images/icons/circle-check-solid.png" alt="" srcset="">
+                <div class="status-text">
+                    You have successfully filled the informations !
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+            
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
