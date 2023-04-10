@@ -37,6 +37,8 @@ body{
     color: var(--color);
     font-family: var(--fontfamily);
     padding: 1rem 8rem;
+    max-width: 90%;
+    margin: auto;
 }
 
 a{
